@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <!--Создаем форму-->
+    <form action="#" method="get" enctype="multipart/form-data"></form>
+    <!--Вводим имя фамилию + input type="text" placeholder="подпись поля"-->
+    <div>
+        <input type="text" name="username" value="">
+    </div>
+    <!--Вводим пароль ****-->
+    <div>
+        <input type="password" name="userpass" value="">
+    </div>
+    <br>
+    <!--Выбираем 1 из вариантов-->
+    <div>
+        <p><input type="radio" name="bear" value="lager">Светлое пиво</p>
+        <p><input type="radio" name="bear" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <!--Выбираем 1 из вариантов в кружочке, уже стоит 1 точка-->
+    <div>
+        <p><input type="radio" name="bear2" value="lager">Светлое пиво</p>
+        <p><input checked type="radio" name="bear2" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <!--Выбираем 1 из вариантов, в квадрате, checked-стоит по умолчанию галочка-->
+    <div>
+        <p><input checked type="checkbox" name="car" value="yes">Наличие авто</p>
+        <p><input type="checkbox" name="car2" value="yes">Наличие авто 2</p>
+        <p><input checked type="checkbox" name="car3" value="yes">Наличие авто 3</p>
+        <p><input type="checkbox" name="car4" value="yes">Наличие авто 3</p>
+    </div>
+    <br>
+    <!--Тип данных галочка-->
+    <div>
+        <p><input checked type="checkbox" name="car" value="yes">Наличие авто</p>
+        <p><input type="checkbox" name="car2" value="yes">Наличие авто 2</p>
+        <p><input checked type="checkbox" name="car3" value="yes">Наличие авто 3</p>
+        <p><input type="checkbox" name="car4" value="yes">Наличие авто 3</p>
+    </div>
+    <br>
+    <!--Тип файл-->
+    <div>
+        <p><input type="file" name="foto"></p>
+    </div>
+
+    <br>
+    <!--Ввод объемного/многострочного текстa TEXTAREA / +placeholder="подпись поля"-->
+    <div>
+        <textarea name="text"></textarea>
+    </div>
+
+    <br>
+    <!--Выпадающий список <select></select>+<option></option>-->
+    <div>
+        <select name="color">
+            <option value="red">Красный</option>
+            <option value="yellow">Желтый</option>
+            <option value="blue">Синий</option>
+        </select>
+    </div>
+    <br>
+    <!--Выпадающий МНОЖЕСТВЕННЫЙ список <select></select>+<option></option>+multiple-->
+    <div>
+        <select multiple name="color">
+            <option value="red">Красный</option>
+            <option value="yellow">Желтый</option>
+            <option value="blue">Синий</option>
+        </select>
+    </div>
+    <br>
+    <!--Выпадающий МНОЖЕСТВЕННЫЙ список <select></select>+<option></option> multiple + selected-->
+    <div>
+        <select multiple name="color">
+            <option value="red">Красный</option>
+            <option selected value="yellow">Желтый</option>
+            <option value="blue">Синий</option>
+        </select>
+    </div>
+    <br>
+    <!--Button SUBMIT-отправится вся форма   /    RESET вся форма очистится-->
+    <div>
+        <button  type="submit">Отправить</button>
+    </div>
+
+    <!-- 
+        Disabled - блокирует любые действия с полем, и делает его визуально тусклым, заблокированные данные не передают инфо на сервер 
+        Tabindex="1" - определяет порядок перехода между элементами при нажатии клавиши TAB
+    -->
+</body>
+
+</html>
